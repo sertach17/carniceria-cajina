@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galería | Carnicería Cajina — Chinandega</title>
+<meta name="description" content="Fotos reales de Carnicería Cajina y de la familia detrás de la carnicería, en el Barrio La Cruz, Chinandega.">
+<meta property="og:title" content="Galería — Carnicería Cajina">
+<meta property="og:description" content="Carne de res de la mejor calidad en el Barrio La Cruz, Chinandega.">
+<meta property="og:image" content="img-v5/og.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="img-v5/favicon-32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="img-v5/favicon.png">
+<link rel="apple-touch-icon" href="img-v5/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600&family=Great+Vibes&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --rojo:#c1121f; --rojo-osc:#8c0e18; --rojo-claro:#e63946;
+  --negro:#111111; --carbon:#181818; --carbon2:#202020;
+  --crema:#f6f1e6; --crema-os:#efe7d6;
+  --blanco:#ffffff; --gris:#b9b3a6; --gris-os:#6f6a5e;
+  --nav-h:88px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',system-ui,sans-serif;background:var(--negro);color:var(--blanco);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+section{scroll-margin-top:var(--nav-h)}
+.serif{font-family:'Playfair Display',Georgia,serif}
+.script{font-family:'Great Vibes',cursive;font-weight:400}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.eyebrow{font-size:.8rem;letter-spacing:.35em;text-transform:uppercase;font-weight:500}
+
+nav{position:fixed;top:0;left:0;right:0;height:var(--nav-h);z-index:50;display:flex;align-items:center;
+  background:rgba(10,10,10,.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(255,255,255,.07)}
+.nav-inner{width:100%;max-width:1280px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand-logo{height:56px;width:auto;flex:none;display:block}
+.nav-links{display:flex;align-items:center;gap:26px;list-style:none}
+.nav-links a{text-decoration:none;font-size:.92rem;letter-spacing:.08em;color:#e8e4da;position:relative;padding:6px 0}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--rojo);transition:width .25s}
+.nav-links a:hover::after,.nav-links a[aria-current="page"]::after{width:100%}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--rojo);color:#fff;text-decoration:none;
+  font-weight:500;letter-spacing:.06em;font-size:.95rem;padding:13px 26px;border-radius:8px;border:none;cursor:pointer;
+  transition:background .2s,transform .15s}
+.btn:hover{background:var(--rojo-osc);transform:translateY(-1px)}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-nav{padding:11px 20px;font-size:.88rem}
+.burger{display:none;background:none;border:none;cursor:pointer;padding:10px}
+.burger span{display:block;width:26px;height:2px;background:#fff;margin:6px 0;transition:.25s}
+.kicker{font-family:'Playfair Display',serif;font-size:1.05rem;letter-spacing:.28em;color:#2b2721}
+.sec-head{text-align:left;margin-bottom:8px}
+.sec-head .kicker{color:var(--blanco)}
+.sec-head h2{font-family:'Playfair Display',serif;font-weight:800;font-size:clamp(2.6rem,5vw,4rem);
+  color:var(--rojo);line-height:1;margin:4px 0 14px}
+.sec-head p.lead{color:var(--gris);font-weight:300;max-width:52ch;font-size:1.05rem}
+
+footer{background:#0b0b0b;padding:36px 0;color:var(--gris);font-size:.9rem;letter-spacing:.04em}
+.foot-inner{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.foot-brand{display:flex;align-items:center;gap:14px}
+.foot-brand img{height:48px;width:auto}
+
+.wa-float{position:fixed;right:22px;bottom:22px;z-index:60;width:58px;height:58px;border-radius:50%;
+  background:#25d366;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 24px rgba(0,0,0,.4);transition:transform .15s}
+.wa-float:hover{transform:scale(1.07)}
+.wa-float svg{width:30px;height:30px;color:#fff}
+
+.galeria{background:var(--negro);padding:calc(var(--nav-h) + 56px) 0 104px;min-height:100svh}
+.galeria .sec-head h2{color:var(--rojo)}
+.back{display:inline-flex;align-items:center;gap:6px;color:var(--gris);text-decoration:none;font-size:.92rem;letter-spacing:.06em;margin-bottom:22px}
+.back:hover{color:#fff}
+.back svg{width:18px;height:18px}
+.gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
+.gal-grid figure{margin:0;border-radius:12px;overflow:hidden;cursor:zoom-in;background:var(--carbon);
+  border:1px solid rgba(255,255,255,.06);aspect-ratio:3/4}
+.gal-grid img{width:100%;height:100%;object-fit:cover;transition:transform .35s}
+.gal-grid figure:hover img{transform:scale(1.04)}
+.gal-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:48px}
+.btn-ghost{background:transparent;border:1px solid rgba(255,255,255,.28)}
+.btn-ghost:hover{background:rgba(255,255,255,.08)}
+.lightbox{position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;padding:24px}
+.lightbox.open{display:flex}
+.lightbox img{max-width:min(1100px,96vw);max-height:90vh;object-fit:contain;border-radius:8px}
+.lightbox button{position:absolute;top:18px;right:22px;background:none;border:none;color:#fff;font-size:2.2rem;cursor:pointer;line-height:1}
+
+@media(max-width:960px){
+  .nav-links{position:fixed;top:var(--nav-h);right:0;left:0;background:rgba(10,10,10,.97);
+    flex-direction:column;gap:0;padding:12px 0 20px;transform:translateY(-130%);transition:transform .3s;align-items:stretch}
+  .nav-links.open{transform:translateY(0)}
+  .nav-links li{text-align:center}
+  .nav-links a{display:block;padding:14px;font-size:1.05rem}
+  .nav-links .btn-nav{margin:10px 24px 0;justify-content:center}
+  .burger{display:block}
+  .brand-logo{height:42px}
+  :root{--nav-h:76px}
+  .gal-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:520px){
+  .gal-grid{grid-template-columns:1fr}
+  .btn{width:100%;justify-content:center;box-sizing:border-box}
+  .btn-nav{width:auto}
+  .brand-logo{height:40px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="brand" href="./#inicio" aria-label="Carnicería Cajina — inicio">
+      <img class="brand-logo" src="img-v5/logo-nav.png" width="159" height="112" alt="Carnicería Cajina">
+    </a>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="./#inicio">Inicio</a></li>
+      <li><a href="./#historia">Nuestra Historia</a></li>
+      <li><a href="./#productos">Productos</a></li>
+      <li><a href="./#calidad">Calidad</a></li>
+      <li><a href="galeria.html" aria-current="page">Galería</a></li>
+      <li><a href="./#ubicacion">Ubicación</a></li>
+      <li><a class="btn btn-nav" href="https://wa.me/50585622786?text=Hola%20Carnicer%C3%ADa%20Cajina%2C%20quisiera%20informaci%C3%B3n%20sobre%20sus%20productos." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.1-.7l.4-.5c.1-.2.1-.3 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.2-.7.3-.9.9-1.1 2.2-.2 3.9a11.6 11.6 0 0 0 4.5 4.2c1.7.8 2.4.9 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/></svg>
+        Hacer un pedido</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="galeria" id="galeria">
+  <div class="wrap">
+    <a class="back" href="./"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>Volver al inicio</a>
+    <div class="sec-head">
+      <p class="kicker" style="color:#fff">NUESTRA</p>
+      <h2>GALERÍA</h2>
+      <p class="lead">Fotos reales de nuestra carnicería y de la familia detrás de Carnicería Cajina.</p>
+    </div>
+    <div class="gal-grid" id="galGrid">
+      <figure><img src="img-v5/photo-01.webp" data-full="img-v5/photo-01.webp" alt="Doña Cajina con cortes de carne" loading="lazy"></figure>
+      <figure><img src="img-v5/photo-02.webp" data-full="img-v5/photo-02.webp" alt="Carne colgada en la carnicería" loading="lazy"></figure>
+      <figure><img src="img-v5/photo-03.webp" data-full="img-v5/photo-03.webp" alt="Detalle de carne fresca en bandeja de madera" loading="lazy"></figure>
+      <figure><img src="img-v5/photo-04.webp" data-full="img-v5/photo-04.webp" alt="Madre y abuela en la Carnicería Cajina" loading="lazy"></figure>
+      <figure><img src="img-v5/photo-05.webp" data-full="img-v5/photo-05.webp" alt="Fachada de la Carnicería Cajina" loading="lazy"></figure>
+    </div>
+    <div class="gal-actions">
+      <a class="btn" href="https://wa.me/50585622786?text=Hola%20Carnicer%C3%ADa%20Cajina%2C%20quisiera%20hacer%20un%20pedido." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.1-.7l.4-.5c.1-.2.1-.3 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.2-.7.3-.9.9-1.1 2.2-.2 3.9a11.6 11.6 0 0 0 4.5 4.2c1.7.8 2.4.9 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/></svg>
+        Hacer un pedido</a>
+      <a class="btn btn-ghost" href="./">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+        Volver al inicio</a>
+    </div>
+  </div>
+</main>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada">
+  <button type="button" id="lbClose" aria-label="Cerrar">&times;</button>
+  <img id="lbImg" src="" alt="">
+</div>
+
+<footer>
+  <div class="wrap foot-inner">
+    <div class="foot-brand">
+      <img src="img-v5/logo.png" width="48" height="48" alt="Carnicería Cajina">
+      <span>© 2026 Carnicería Cajina — Barrio La Cruz, Chinandega</span>
+    </div>
+    <span>Una tradición familiar</span>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/50585622786?text=Hola%20Carnicer%C3%ADa%20Cajina%2C%20quisiera%20hacer%20un%20pedido." target="_blank" rel="noopener" aria-label="Pedir por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.1-.7l.4-.5c.1-.2.1-.3 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.2-.7.3-.9.9-1.1 2.2-.2 3.9a11.6 11.6 0 0 0 4.5 4.2c1.7.8 2.4.9 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
+
+<script>
+(function(){
+  var burger=document.getElementById('burger'), links=document.getElementById('navLinks');
+  burger.addEventListener('click',function(){
+    var open=links.classList.toggle('open');
+    burger.setAttribute('aria-expanded',open?'true':'false');
+  });
+  links.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){links.classList.remove('open');burger.setAttribute('aria-expanded','false');});
+  });
+
+  var lb=document.getElementById('lightbox'), lbImg=document.getElementById('lbImg'), lbClose=document.getElementById('lbClose');
+  document.getElementById('galGrid').addEventListener('click',function(e){
+    var img=e.target.closest('img');
+    if(!img) return;
+    lbImg.src=img.getAttribute('data-full')||img.src;
+    lbImg.alt=img.alt||'';
+    lb.classList.add('open');
+  });
+  function closeLb(){lb.classList.remove('open');lbImg.src='';}
+  lbClose.addEventListener('click',closeLb);
+  lb.addEventListener('click',function(e){if(e.target===lb) closeLb();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape') closeLb();});
+})();
+</script>
+</body>
+</html>
